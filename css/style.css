@@ -1,0 +1,662 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    width: 100%;
+}
+
+.anchor-button{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #E02C6D;
+    color: white;
+    width: 123px;
+    height: 44px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.anchor-button a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+/* Header Style Start */
+header{
+    width: 100%;
+    background-color: #2D25A0;
+}
+/* Top Nav Style Start */
+.top-nav{
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 42px;
+}
+.top-nav ul{
+    list-style: none;
+    display: flex;
+}
+.top-nav ul li{
+    margin-right: 36px;
+}
+.top-nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.menu-list label i{
+    color: white;
+    display: none;
+}
+input[type="checkbox"]{
+    visibility: hidden;
+}
+/* Top Nav End */
+.btn-animation{
+    transition:  0.4s ease;
+}
+.btn-animation:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    font-size: 22px;
+}
+
+    /* Home styles start */
+.home-area{
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.home-left h1{
+    margin-bottom: 20px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    animation: textfadeinout 4s ease-in infinite forwards;
+}
+@keyframes textfadeinout {
+	0% {
+		opacity: 0;
+		text-shadow: 0px 0px 30px #fff;
+        transform: scale(1.2);
+	}
+	30%, 75% {
+		opacity: 1;
+		text-shadow: 0px 0px 5px #fff;
+        transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		text-shadow: 0px 0px 30px #fff;
+        transform: scale(0);
+	}
+}
+.home-right{
+    width: 556px;
+    margin-top: 67px;
+    margin-bottom: 86px;
+}
+.home-right img{
+    width: 100%;
+    
+}
+    /* Home styles end */
+/* Header Style End */
+
+/* Player Styles Start */
+.player-area{
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    gap: 30px;
+    align-content: space-between;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.card{
+    justify-self: center;
+    background-color: white;
+    height: 474px;
+    padding: 15px 15px;
+    box-shadow: 0 0 20px gray;
+    overflow: hidden;
+}
+.card img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.card h3{
+    font-size: 28px;
+    padding-top: 16px;
+    padding-bottom: 10px;
+}
+.card p{
+    font-size: 16px;
+    color: #6C6C6C;
+    font-weight: 400;
+}
+/* Player Styles End */
+
+/* Highlight Styles Start */
+.highlight-area{
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.highlight-left{
+    width: 470px;
+}
+.highlight-left h2{
+    font-size: 48px;
+    color: #0A0826;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.highlight-left p{
+    font-size: 16px;
+    color: #6C6C6C;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+.highlight-right{
+    width: 567px;
+}
+.highlight-right img{
+    width: 100%;
+    height: auto;
+}
+/* Highlight Styles End */
+
+/* upcoming-matches Styles Start */
+.upcoming-match{
+    width: 100%;
+    background-color: #2D25A0;
+    
+}
+.match{
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.team-image img{
+    width: 40px;
+    height: 30px;
+}
+.upcoming-title, .timer{
+    color: white;
+}
+.timer{
+    display: flex;
+    font-weight: 300;
+}
+.timer div{
+    border-right: 1px solid white;
+}
+.timer p{
+    margin: 30px;
+}
+.timer div:last-of-type{
+    border-right: none;
+}
+/* upcoming-matches Styles End */
+
+/* Latest News Styles Start */
+.latest-news{
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+.latest-news h2{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.news-card{
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    padding: 15px;
+    padding-bottom: 25px;
+    box-shadow: 0 0 12px gray;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+.image-container{
+    position: relative;
+    width: 100%;
+}
+.image-container img{
+    width: 100%;
+    opacity: 1;
+    backface-visibility: hidden;
+    transition: .5s ease;
+}
+.image-overlay{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    display: none;
+}
+.image-overlay a{
+    text-decoration: none;
+}
+.image-container:hover img{
+    opacity: .3;  
+}
+.image-container:hover .image-overlay{
+    display: block;
+}
+.news-card p{
+    font-size: 16px;
+    color: #6C6C6C;
+    font-weight: 400;
+    margin-right: 5px;
+    text-overflow: ellipsis;
+}
+.news-card i{
+    margin-right: 5px;
+}
+.news-card h5{
+    color: #6C6C6C;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* Latest News Styles End */
+
+/* Footer Styles Start */
+footer{
+    width: 100%;
+    margin-top: 100px;
+    background-color:#2D25A0;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+footer img{
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.social-links i{
+    background-color: #0b0d1726;
+    border-radius: 50%;
+    padding: 10px;
+    color: #969BAB;
+    margin-right: 14px;
+}
+.copyright{
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+
+/* Footer Styles End */
+
+
+/* Responsive for Laptop, larger tablets in landscape or smaller desktops (769-1160px screen) */
+@media only screen and (min-width: 769px) and (max-width: 1160px) {
+  /* Top Nav */
+    .top-nav{
+        width: 90%;
+    }
+    .top-nav ul li{
+        margin-right: 25px;
+    }
+    /* Home Area */
+    .home-area{
+        width: 90%;
+    }
+    .home-left{
+        width: 45%;
+    }
+    .home-right{
+        width: 45%;
+    }
+    .home-left h1{
+        font-size: 40px;
+    }
+    /* Player Area */
+    .player-area{
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card{
+        height: 390px;
+    }
+    .card h3{
+        font-size: 20px;
+    }
+    .card p{
+        font-size: 14px;
+    }
+    /* Highlight Styles Start */
+    .highlight-area{
+        width: 90%;
+    }
+    .highlight-left{
+        width: 45%;
+    }
+    .highlight-right{
+        width: 45%;
+    }
+    .highlight-left h2{
+        font-size: 30px;
+    }
+    .highlight-left p{
+        font-size: 14px;
+    }
+    /* upcoming-matches Styles Start */
+    .match{
+        width: 90%;
+    }
+    .upcoming-title h2, .timer{
+        font-size: 15px;
+    }
+    .upcoming-title h3{
+        font-size: 13px;
+    }
+    .timer p{
+        margin: 30px 10px;
+    }
+    /* Latest News Styles Start */
+    .latest-news{
+        width: 90%;
+    }
+    .news-card{
+        width: 27%;
+    }
+    
+}
+/* Responsive for Tablet & larger smartphones (481-768px screen) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .anchor-button{
+        width: 90px;
+        height: 40px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .anchor-button a{
+        font-size: 12px;
+    }
+    .top-nav{
+        width: 95%;
+        padding-top: 20px;
+    }
+    .top-nav ul li{
+        margin-right: 15px;
+    }
+    .top-nav ul li a{
+        font-size: 10px;
+    }
+    /* Home Area */
+    .home-area{
+        width: 90%;
+    }
+    .home-left{
+        width: 45%;
+    }
+    .home-right{
+        width: 45%;
+    }
+    .home-left h1{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    /* Player Area */
+    .player-area{
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card{
+        height: 390px;
+    }
+    .card h3{
+        font-size: 18px;
+    }
+    .card p{
+        font-size: 13px;
+
+    }
+    /* Highlight Styles Start */
+    .highlight-area{
+        width: 90%;
+    }
+    .highlight-left{
+        width: 45%;
+    }
+    .highlight-right{
+        width: 45%;
+    }
+    .highlight-left h2{
+        font-size: 20px;
+    }
+    .highlight-left p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    /* upcoming-matches Styles Start */
+    .upcoming-match{
+        flex-direction: column;
+    }
+    .upcoming-match div{
+        margin-bottom: 0px;
+    }
+    .match{
+        width: 90%;
+        flex-direction: column;
+    }
+    .upcoming-title{
+        text-align: center;
+    }
+    .upcoming-title h2, .timer{
+        font-size: 15px;
+    }
+    .upcoming-title h3{
+        font-size: 13px;
+    }
+
+    .timer div{
+        border-right: 1px solid white ;
+        border-top: none;
+        padding: 0;
+        margin: 0px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+    }
+    .timer p{
+        margin: 15px;
+    }
+    .timer div:first-of-type{
+        border-top: none;
+    }
+    /* Latest News Styles Start */
+    .latest-news{
+        width: 90%;
+    }
+    .news-card{
+        width: 40%;
+    }
+}
+/* Responsive for Mobilephone or Smaller smartphone (0-480) */
+@media only screen and (max-width: 480px) {
+
+    .anchor-button{
+        width: 80px;
+        height: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .anchor-button a{
+        font-size: 12px;
+    }
+    .top-nav{
+        width: 90%;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    .top-nav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .top-nav ul li{
+        margin-right: 0px;
+        display: none;
+    }
+    .top-nav ul li a{
+        font-size: 20px;
+    }
+    .menu-list label i{
+        color: white;
+        display: block;
+    }
+    input[type="checkbox"]{
+        visibility: hidden;
+    }
+    input:checked ~ ul li{
+        display: block;
+    }
+
+    /* Home Area */
+    .home-area{
+        width: 90%;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home-left{
+        width: 100%;
+    }
+    .home-right{
+        width: 100%;
+    }
+    .home-left h1{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    /* Player Area */
+    .player-area{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card{
+        height: 600px;
+    }
+    .card h3{
+        font-size: 37px;
+    }
+    .card p{
+        font-size: 20px;
+
+    }
+    /* Highlight Styles Start */
+    .highlight-area{
+        width: 90%;
+        flex-direction: column;
+    }
+    .highlight-left{
+        width: 100%;
+    }
+    .highlight-right{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .highlight-left h2{
+        font-size: 37px;
+    }
+    .highlight-left p{
+        font-size: 20px;
+    }
+    .watch-now{
+        width: 120px;
+    }
+    /* upcoming-matches Styles Start */
+    .upcoming-match{
+        flex-direction: column;
+    }
+    .upcoming-match div{
+        margin-bottom: 0px;
+    }
+    .match{
+        width: 90%;
+        flex-direction: column;
+    }
+    .upcoming-title{
+        text-align: center;
+    }
+    .upcoming-title h2, .timer{
+        font-size: 15px;
+    }
+    .upcoming-title h3{
+        font-size: 13px;
+    }
+
+    .timer div{
+        border-right: 1px solid white ;
+        border-top: none;
+        padding: 0;
+        margin: 0px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .timer p{
+        margin: 15px;
+    }
+    .timer div:first-of-type{
+        border-top: none;
+    }
+    .buy-ticket{
+        width: 120px;
+    }
+    /* Latest News Styles Start */
+    .latest-news{
+        width: 90%;
+    }
+    .news-card{
+        width: 90%;
+    }
+}
